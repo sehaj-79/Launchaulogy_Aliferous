@@ -17,7 +17,7 @@ public class FullBodyFitnessActivity extends AppCompatActivity {
         setContentView(R.layout.activity_full_body_fitness);
 
 
-        //Nav-Bar Start
+   /*     //Nav-Bar Start
         navHome=findViewById(R.id.nav_home);
         navYoga=findViewById(R.id.nav_yoga);
         navAilment=findViewById(R.id.nav_ailment);
@@ -51,6 +51,6 @@ public class FullBodyFitnessActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        //Nav-Bar End
+        //Nav-Bar End*/
     }
 }
