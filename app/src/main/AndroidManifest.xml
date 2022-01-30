@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Launchaulogy_Aliferous">
         <activity
+            android:name=".AilmentsActivity"
+            android:exported="false" />
+        <activity
             android:name=".FullBodyFitnessActivity"
             android:exported="false" />
         <activity
