@@ -89,7 +89,7 @@ public class PhysicalWellnessActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 circle5.getBackground().setAlpha(255);
-                Intent intent = new Intent(PhysicalWellnessActivity.this,AilmentsActivity.class);
+                Intent intent = new Intent(PhysicalWellnessActivity.this,MainActivity.class);
                 startActivity(intent);
             }
         });

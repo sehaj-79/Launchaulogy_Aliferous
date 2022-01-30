@@ -55,6 +55,8 @@ class MainActivity : AppCompatActivity() {
      **/
     private var modelPos = 1
 
+
+
     /** Default device is CPU */
     private var device = Device.CPU
 
@@ -70,7 +72,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var swClassification: SwitchCompat
     private lateinit var vClassificationOption: View
     private var cameraSource: CameraSource? = null
-    private var isClassifyPose = false
+    private var isClassifyPose = true
     private val requestPermissionLauncher =
         registerForActivityResult(
             ActivityResultContracts.RequestPermission()
@@ -201,6 +203,8 @@ class MainActivity : AppCompatActivity() {
                                     R.string.tfe_pe_tv_classification_value,
                                     convertPoseLabels(if (it.isNotEmpty()) it[0] else null)
                                 )
+
+
                                 tvClassificationValue2.text = getString(
                                     R.string.tfe_pe_tv_classification_value,
                                     convertPoseLabels(if (it.size >= 2) it[1] else null)
@@ -349,7 +353,7 @@ class MainActivity : AppCompatActivity() {
 
     // Show/hide the pose classification option.
     private fun showPoseClassifier(isVisible: Boolean) {
-        vClassificationOption.visibility = if (isVisible) View.VISIBLE else View.VISIBLE
+        vClassificationOption.visibility = if (isVisible) View.VISIBLE else View.GONE
         if (!isVisible) {
             swClassification.isChecked = false
         }
