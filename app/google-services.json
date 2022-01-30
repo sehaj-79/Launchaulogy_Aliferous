@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "185417716200",
+    "project_id": "launchology-af0e0",
+    "storage_bucket": "launchology-af0e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185417716200:android:b1162024a69d15bfe2d45d",
+        "android_client_info": {
+          "package_name": "com.aliferous.launchaulogy_aliferous"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185417716200-17h3u24cv2t678328fn76ed9boucm9b4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFtC9s16VMmyte07vo5zqk8nedahvMJAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185417716200-17h3u24cv2t678328fn76ed9boucm9b4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
