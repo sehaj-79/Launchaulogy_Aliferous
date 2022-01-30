@@ -18,7 +18,6 @@ public class AilmentsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ailments);
 
-        int Value = 0;//getIntent().getIntExtra("Value",0);
 
         button1 = findViewById(R.id.Ailment_treatment);
         button2 = findViewById(R.id.Ailment_yoga);
@@ -28,7 +27,6 @@ public class AilmentsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AilmentsActivity.this, CausesTreatmentActivity.class);
-                intent.putExtra("Value",Value);
                 startActivity(intent);
             }
         });
@@ -37,7 +35,6 @@ public class AilmentsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AilmentsActivity.this, YogaMeditationActivity.class);
-                intent.putExtra("Value",Value);
                 startActivity(intent);
             }
         });
@@ -46,7 +43,6 @@ public class AilmentsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AilmentsActivity.this, HomeRemediesActivity.class);
-                intent.putExtra("Value",Value);
                 startActivity(intent);
             }
         });
