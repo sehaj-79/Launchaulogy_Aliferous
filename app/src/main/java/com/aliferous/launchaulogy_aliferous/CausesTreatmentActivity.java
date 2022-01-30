@@ -39,7 +39,7 @@ public class CausesTreatmentActivity extends AppCompatActivity {
         navAilment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CausesTreatmentActivity.this, AilmentsActivity.class);
+                Intent intent = new Intent(CausesTreatmentActivity.this, PhysicalWellnessActivity.class);
                 startActivity(intent);
             }
         });

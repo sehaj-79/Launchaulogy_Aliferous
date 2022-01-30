@@ -18,7 +18,7 @@ public class AilmentsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ailments);
 
-        int Value = getIntent().getIntExtra("Value",0);
+        int Value = 0;//getIntent().getIntExtra("Value",0);
 
         button1 = findViewById(R.id.Ailment_treatment);
         button2 = findViewById(R.id.Ailment_yoga);
@@ -76,8 +76,8 @@ public class AilmentsActivity extends AppCompatActivity {
         navAilment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(AilmentsActivity.this, AilmentsActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(AilmentsActivity.this, PhysicalWellnessActivity.class);
+                startActivity(intent);
             }
         });
         navProfile.setOnClickListener(new View.OnClickListener() {

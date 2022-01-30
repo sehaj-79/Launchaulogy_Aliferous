@@ -40,7 +40,7 @@ public class FullBodyFitnessActivity extends AppCompatActivity {
         navAilment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FullBodyFitnessActivity.this, AilmentsActivity.class);
+                Intent intent = new Intent(FullBodyFitnessActivity.this, PhysicalWellnessActivity.class);
                 startActivity(intent);
             }
         });

@@ -40,7 +40,7 @@ public class HomeRemediesActivity extends AppCompatActivity {
         navAilment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeRemediesActivity.this, AilmentsActivity.class);
+                Intent intent = new Intent(HomeRemediesActivity.this, PhysicalWellnessActivity.class);
                 startActivity(intent);
             }
         });

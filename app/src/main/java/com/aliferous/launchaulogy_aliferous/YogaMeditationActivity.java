@@ -39,7 +39,7 @@ public class YogaMeditationActivity extends AppCompatActivity {
         navAilment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(YogaMeditationActivity.this, AilmentsActivity.class);
+                Intent intent = new Intent(YogaMeditationActivity.this, PhysicalWellnessActivity.class);
                 startActivity(intent);
             }
         });

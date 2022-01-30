@@ -42,7 +42,7 @@ public class HomeActivity extends AppCompatActivity {
         navAilment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, AilmentsActivity.class);
+                Intent intent = new Intent(HomeActivity.this, PhysicalWellnessActivity.class);
                 startActivity(intent);
             }
         });
