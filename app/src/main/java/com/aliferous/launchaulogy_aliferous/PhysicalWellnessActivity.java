@@ -2,9 +2,13 @@ package com.aliferous.launchaulogy_aliferous;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -38,7 +42,20 @@ public class PhysicalWellnessActivity extends AppCompatActivity {
         circle1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                final ObjectAnimator oa1 = ObjectAnimator.ofFloat(circle1, "alpha", 0f, 1f);
+                oa1.setDuration(250);
+                oa1.setInterpolator(new AccelerateDecelerateInterpolator());
+                oa1.addListener(new AnimatorListenerAdapter() {
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        super.onAnimationEnd(animation);
+                        Intent intent = new Intent(PhysicalWellnessActivity.this,AilmentsActivity.class);
+                        startActivity(intent);
+                    }
+                });
+                oa1.start();
                 circle1.getBackground().setAlpha(255);
+
             }
         });
 
@@ -46,6 +63,8 @@ public class PhysicalWellnessActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 circle2.getBackground().setAlpha(255);
+                Intent intent = new Intent(PhysicalWellnessActivity.this,AilmentsActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -53,12 +72,16 @@ public class PhysicalWellnessActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 circle3.getBackground().setAlpha(255);
+                Intent intent = new Intent(PhysicalWellnessActivity.this,AilmentsActivity.class);
+                startActivity(intent);
             }
         });
         circle4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 circle4.getBackground().setAlpha(255);
+                Intent intent = new Intent(PhysicalWellnessActivity.this,AilmentsActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -66,6 +89,8 @@ public class PhysicalWellnessActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 circle5.getBackground().setAlpha(255);
+                Intent intent = new Intent(PhysicalWellnessActivity.this,AilmentsActivity.class);
+                startActivity(intent);
             }
         });
 
