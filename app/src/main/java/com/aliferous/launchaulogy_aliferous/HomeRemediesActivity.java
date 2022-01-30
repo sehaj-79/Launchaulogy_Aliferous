@@ -5,18 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeRemediesActivity extends AppCompatActivity {
 
     ImageView navHome, navYoga, navAilment, navProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
-
+        setContentView(R.layout.activity_home_remedies);
 
 
         //Nav-Bar Start
@@ -28,28 +26,28 @@ public class HomeActivity extends AppCompatActivity {
         navHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(HomeActivity.this, HomeActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(HomeRemediesActivity.this, HomeActivity.class);
+                startActivity(intent);
             }
         });
         navYoga.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, YogaMeditationActivity.class);
+                Intent intent = new Intent(HomeRemediesActivity.this, YogaMeditationActivity.class);
                 startActivity(intent);
             }
         });
         navAilment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, AilmentsActivity.class);
+                Intent intent = new Intent(HomeRemediesActivity.this, AilmentsActivity.class);
                 startActivity(intent);
             }
         });
         navProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
+                Intent intent = new Intent(HomeRemediesActivity.this, ProfileActivity.class);
                 startActivity(intent);
             }
         });
