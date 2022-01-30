@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Launchaulogy_Aliferous">
         <activity
+            android:name=".PhysicalWellnessActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity android:name=".RegisterActivity" />
