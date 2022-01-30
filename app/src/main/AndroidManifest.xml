@@ -3,6 +3,7 @@
     package="com.aliferous.launchaulogy_aliferous">
 
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
@@ -15,10 +16,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Launchaulogy_Aliferous">
         <activity
+            android:name=".FullBodyFitnessActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
