@@ -183,7 +183,6 @@ public class RegisterActivity extends AppCompatActivity {
                 String txt_name1 = Objects.requireNonNull(et_name1.getText()).toString().trim();
                 String txt_name2 = Objects.requireNonNull(et_name2.getText()).toString().trim();
                 String txt_contact = Objects.requireNonNull(et_contact.getText()).toString().trim();
-                String op1="No",op2="No",op3="No",op4="No";
                 register(txt_name1,txt_name2,txt_email,txt_password,txt_contact);
             }
         });
@@ -221,9 +220,8 @@ public class RegisterActivity extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()) {
                                         Toast.makeText(RegisterActivity.this, "Account Created Successfully", Toast.LENGTH_SHORT).show();
-                                        tv_next2.setAlpha(1);
+                                        tv_next1.setAlpha(1);
                                         Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
-                                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                         startActivity(intent);
                                         finish();
                                     }
@@ -232,7 +230,7 @@ public class RegisterActivity extends AppCompatActivity {
                         }
                         else{
                             Toast.makeText(RegisterActivity.this,"Illegal Email Id or Password", Toast.LENGTH_SHORT).show();
-                            tv_next2.setAlpha(1);
+                            tv_next1.setAlpha(1);
                         }
 
                     }
