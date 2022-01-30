@@ -7,14 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class FullBodyFitnessActivity extends AppCompatActivity {
+public class CausesTreatmentActivity extends AppCompatActivity {
 
     ImageView navHome, navYoga, navAilment, navProfile;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_full_body_fitness);
+        setContentView(R.layout.activity_causes_treatment);
 
 
         //Nav-Bar Start
@@ -26,31 +25,32 @@ public class FullBodyFitnessActivity extends AppCompatActivity {
         navHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FullBodyFitnessActivity.this, HomeActivity.class);
+                Intent intent = new Intent(CausesTreatmentActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });
         navYoga.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FullBodyFitnessActivity.this, YogaMeditationActivity.class);
+                Intent intent = new Intent(CausesTreatmentActivity.this, YogaMeditationActivity.class);
                 startActivity(intent);
             }
         });
         navAilment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FullBodyFitnessActivity.this, PhysicalWellnessActivity.class);
+                Intent intent = new Intent(CausesTreatmentActivity.this, PhysicalWellnessActivity.class);
                 startActivity(intent);
             }
         });
         navProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FullBodyFitnessActivity.this, ProfileActivity.class);
+                Intent intent = new Intent(CausesTreatmentActivity.this, ProfileActivity.class);
                 startActivity(intent);
             }
         });
         //Nav-Bar End
+
     }
 }

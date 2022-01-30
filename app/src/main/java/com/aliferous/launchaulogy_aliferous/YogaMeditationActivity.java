@@ -7,15 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class FullBodyFitnessActivity extends AppCompatActivity {
+public class YogaMeditationActivity extends AppCompatActivity {
 
     ImageView navHome, navYoga, navAilment, navProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_full_body_fitness);
-
+        setContentView(R.layout.activity_yoga_meditation);
 
         //Nav-Bar Start
         navHome=findViewById(R.id.nav_home);
@@ -26,28 +25,28 @@ public class FullBodyFitnessActivity extends AppCompatActivity {
         navHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FullBodyFitnessActivity.this, HomeActivity.class);
+                Intent intent = new Intent(YogaMeditationActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });
         navYoga.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FullBodyFitnessActivity.this, YogaMeditationActivity.class);
-                startActivity(intent);
+                //Intent intent = new Intent(YogaMeditationActivity.this, YogaMeditationActivity.class);
+                //startActivity(intent);
             }
         });
         navAilment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FullBodyFitnessActivity.this, PhysicalWellnessActivity.class);
+                Intent intent = new Intent(YogaMeditationActivity.this, PhysicalWellnessActivity.class);
                 startActivity(intent);
             }
         });
         navProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FullBodyFitnessActivity.this, ProfileActivity.class);
+                Intent intent = new Intent(YogaMeditationActivity.this, ProfileActivity.class);
                 startActivity(intent);
             }
         });
