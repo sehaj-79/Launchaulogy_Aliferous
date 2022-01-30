@@ -349,7 +349,7 @@ class MainActivity : AppCompatActivity() {
 
     // Show/hide the pose classification option.
     private fun showPoseClassifier(isVisible: Boolean) {
-        vClassificationOption.visibility = if (isVisible) View.VISIBLE else View.GONE
+        vClassificationOption.visibility = if (isVisible) View.VISIBLE else View.VISIBLE
         if (!isVisible) {
             swClassification.isChecked = false
         }
