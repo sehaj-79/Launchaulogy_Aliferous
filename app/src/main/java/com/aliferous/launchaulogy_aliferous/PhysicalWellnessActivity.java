@@ -2,6 +2,7 @@ package com.aliferous.launchaulogy_aliferous;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -38,7 +39,6 @@ public class PhysicalWellnessActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 circle1.getBackground().setAlpha(255);
-                Toast.makeText(getApplicationContext(),"Click",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -46,7 +46,6 @@ public class PhysicalWellnessActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 circle2.getBackground().setAlpha(255);
-                Toast.makeText(getApplicationContext(),"Click",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -54,14 +53,12 @@ public class PhysicalWellnessActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 circle3.getBackground().setAlpha(255);
-                Toast.makeText(getApplicationContext(),"Click",Toast.LENGTH_SHORT).show();
             }
         });
         circle4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 circle4.getBackground().setAlpha(255);
-                Toast.makeText(getApplicationContext(),"Click",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -69,14 +66,14 @@ public class PhysicalWellnessActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 circle5.getBackground().setAlpha(255);
-                Toast.makeText(getApplicationContext(),"Click",Toast.LENGTH_SHORT).show();
             }
         });
 
         tvButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Click",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(PhysicalWellnessActivity.this,FullBodyFitnessActivity.class);
+                startActivity(intent);
             }
         });
 
