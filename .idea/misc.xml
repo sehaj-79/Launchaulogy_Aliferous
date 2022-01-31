@@ -4,14 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_ailments.xml" value="0.20945306533020033" />
-        <entry key="app/src/main/res/layout/activity_full_body_fitness.xml" value="0.41794871794871796" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.4035897435897436" />
+        <entry key="app/src/main/res/layout/activity_full_body_fitness.xml" value="0.15021553474062607" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.2759726610764282" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.41794871794871796" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.4035897435897436" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1883272865341126" />
         <entry key="app/src/main/res/layout/activity_physical_wellness.xml" value="0.4244791666666667" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.28800421401207993" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.4244791666666667" />
-        <entry key="app/src/main/res/layout/bottom_sheet_layout.xml" value="0.4244791666666667" />
+        <entry key="app/src/main/res/layout/activity_yoga_splash.xml" value="0.25675675675675674" />
+        <entry key="app/src/main/res/layout/bottom_sheet_layout.xml" value="0.23692983155227076" />
       </map>
     </option>
   </component>

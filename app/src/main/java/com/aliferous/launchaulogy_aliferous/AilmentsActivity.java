@@ -34,7 +34,7 @@ public class AilmentsActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AilmentsActivity.this, YogaMeditationActivity.class);
+                Intent intent = new Intent(AilmentsActivity.this, YogaSplashActivity.class);
                 startActivity(intent);
             }
         });

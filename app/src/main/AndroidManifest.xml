@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Launchaulogy_Aliferous">
         <activity
+            android:name=".YogaSplashActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeRemediesActivity"
             android:exported="false" />
         <activity

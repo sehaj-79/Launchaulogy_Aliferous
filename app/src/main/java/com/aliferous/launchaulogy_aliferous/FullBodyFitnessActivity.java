@@ -5,9 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 public class FullBodyFitnessActivity extends AppCompatActivity {
+
+    FrameLayout button2;
 
     ImageView navHome, navYoga, navAilment, navProfile;
 
@@ -22,6 +25,15 @@ public class FullBodyFitnessActivity extends AppCompatActivity {
         navYoga=findViewById(R.id.nav_yoga);
         navAilment=findViewById(R.id.nav_ailment);
         navProfile=findViewById(R.id.nav_profile);
+        button2 = findViewById(R.id.full_body_yoga);
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FullBodyFitnessActivity.this, YogaMeditationActivity.class);
+                startActivity(intent);
+            }
+        });
 
         navHome.setOnClickListener(new View.OnClickListener() {
             @Override
